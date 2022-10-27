@@ -1,0 +1,14 @@
+/* .brand{
+    margin-top: 5px;
+}
+*/
+.navbar-brand:hover{
+    color: rgb(255, 136, 0);
+    transition: ease-in 0.5s;
+} 
+
+.nav-link:hover{
+    color: rgb(255, 136, 0);
+    transition: ease-in 0.5s;
+}
+
