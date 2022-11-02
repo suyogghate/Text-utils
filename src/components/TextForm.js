@@ -58,15 +58,19 @@ export default function TextForm(props) {
             style={{backgroundColor: props.mode==='dark'?'#042743':'white', color: props.mode==='dark'?'white':'#042743'}}
           ></textarea>
         </div>
-        <button disabled={text.length===0} className="btn btn-primary my-3 mx-3" onClick={handleUpClick}>
+        <button disabled={text.length===0} className="btn my-3 mx-3"  style={{backgroundColor: '#042743', color: 'white'}} onClick={handleUpClick}>
           Uppercase
         </button>
-        <button disabled={text.length===0} className="btn btn-primary my-3 mx-3" onClick={handleLoClick}>
+        <button disabled={text.length===0} className="btn my-3 mx-3" 
+        style={{backgroundColor: '#042743', color: 'white'}} onClick={handleLoClick}>
           Lowercase
         </button>
-        <button disabled={text.length===0} className="btn btn-primary my-3 mx-3" onClick={handleCopy}>Copy Text</button>
-        <button disabled={text.length===0} className="btn btn-primary my-3 mx-3" onClick={handleCamelCase}>Camalize</button>
-        <button disabled={text.length===0} className="btn btn-primary my-3 mx-3" onClick={handleClearText}>Clear Text</button>
+        <button disabled={text.length===0} className="btn my-3 mx-3" 
+        style={{backgroundColor: '#042743', color: 'white'}} onClick={handleCopy}>Copy Text</button>
+        <button disabled={text.length===0} className="btn my-3 mx-3"
+        style={{backgroundColor: '#042743', color: 'white'}} onClick={handleCamelCase}>Camalize</button>
+        <button disabled={text.length===0} className="btn my-3 mx-3" 
+        style={{backgroundColor: '#042743', color: 'white'}} onClick={handleClearText}>Clear Text</button>
       </div>
       <div className="container my-3" style={{color: props.mode==='dark'?'white':'#042743'}}>
         <h2>Your text summary</h2>
